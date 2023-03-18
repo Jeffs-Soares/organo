@@ -8,19 +8,6 @@ import './Formulario.css';
 const Formulario = (props) => {
 
 
-
-    console.log(props)
-
-    /* const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'DevOps',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]; */
-
     const [nome, setNome] = useState('');
     const [cargo, setCargo] = useState('');
     const [imagem, setImagem] = useState('');

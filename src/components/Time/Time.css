@@ -2,6 +2,7 @@
 .time{
     text-align: center;
     padding: 32px;
+    
 
 }
 
@@ -12,3 +13,10 @@
     padding-bottom: 8px;
     
 }
+
+.colaboradores{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
