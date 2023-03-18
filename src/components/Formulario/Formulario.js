@@ -53,14 +53,12 @@ const Formulario = (props) => {
                     aoAlterado={valor => setCargo(valor)}
                 />
 
-
                 <CampoTexto
                     label="Imagem"
                     placeholder="Digite o endereço de sua imagem"
                     valor={imagem}
                     aoAlterado={valor => setImagem(valor)}
                 />
-
 
                 <ListaSuspensa
                     obrigatorio={true}

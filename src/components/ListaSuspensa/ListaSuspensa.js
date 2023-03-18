@@ -2,7 +2,6 @@ import './ListaSuspensa.css';
 
 const ListaSuspensa = (props) => {
 
-
     return (
 
         <div className='lista-suspensa'>
@@ -12,7 +11,6 @@ const ListaSuspensa = (props) => {
                 <option> Selecione o seu time </option>
                 {props.itens.map(item => <option key={item}> {item}</option>)}
             </select>
-
         </div>
     )
 
