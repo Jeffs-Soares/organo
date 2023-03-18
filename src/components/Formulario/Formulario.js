@@ -23,6 +23,14 @@ const Formulario = (props) => {
             time
         })
 
+        setNome ('');
+        setCargo ('');
+        setImagem ('');
+        setTime('Selecione o seu time');
+
+
+
+
        
     }
 
