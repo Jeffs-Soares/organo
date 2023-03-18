@@ -22,16 +22,12 @@ const Formulario = (props) => {
             imagem,
             time
         })
-
-        setNome ('');
-        setCargo ('');
-        setImagem ('');
+        
+        setNome('');
+        setCargo('');
+        setImagem('');
         setTime('Selecione o seu time');
 
-
-
-
-       
     }
 
     return (
@@ -41,37 +37,37 @@ const Formulario = (props) => {
                 <h2> Preencha os dados para criar o card do colaborador</h2>
                 <CampoTexto
 
-                obrigatorio={true}
-                label="Nome"
-                placeholder="Digite seu nome"
-                valor = {nome}
-                aoAlterado = {valorInput => setNome(valorInput)}
+                    obrigatorio={true}
+                    label="Nome"
+                    placeholder="Digite seu nome"
+                    valor={nome}
+                    aoAlterado={valorInput => setNome(valorInput)}
 
                 />
 
                 <CampoTexto
-                obrigatorio={true}
-                label="Cargo"
-                placeholder="Digite seu cargo"
-                valor = {cargo}
-                aoAlterado = {valor => setCargo(valor)}
+                    obrigatorio={true}
+                    label="Cargo"
+                    placeholder="Digite seu cargo"
+                    valor={cargo}
+                    aoAlterado={valor => setCargo(valor)}
                 />
 
 
                 <CampoTexto
-                label="Imagem"
-                placeholder="Digite o endereço de sua imagem"
-                valor = {imagem}
-                aoAlterado = {valor => setImagem(valor)}
+                    label="Imagem"
+                    placeholder="Digite o endereço de sua imagem"
+                    valor={imagem}
+                    aoAlterado={valor => setImagem(valor)}
                 />
 
 
                 <ListaSuspensa
-                obrigatorio={true}
-                label="Time"
-                itens={props.times}
-                valor = {time}
-                aoAlterado={valor => setTime(valor)}
+                    obrigatorio={true}
+                    label="Time"
+                    itens={props.times}
+                    valor={time}
+                    aoAlterado={valor => setTime(valor)}
                 />
 
                 <Botao>Criar Card</Botao>
