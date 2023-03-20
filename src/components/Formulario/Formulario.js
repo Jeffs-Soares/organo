@@ -41,7 +41,7 @@ const Formulario = (props) => {
                     label="Nome"
                     placeholder="Digite seu nome"
                     valor={nome}
-                    aoAlterado={valorInput => setNome(valorInput)}
+                    aoAlterado={valor => setNome(valor)}
 
                 />
 
@@ -70,6 +70,8 @@ const Formulario = (props) => {
 
                 <Botao>Criar Card</Botao>
             </form>
+
+            
         </section>
     )
 }
